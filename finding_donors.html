@@ -14405,11 +14405,15 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
 <p>References:</p>
-<p>Geron, A. (2017) Hands‑On Machine Learning with Scikit‑Learn and TensorFlow. USA: O'Reilly Media.</p>
+<p>Geron, A. (2017) Hands‑On Machine Learning with Scikit‑Learn and TensorFlow. USA: O'Reilly Media.<br>
+(<a href="https://machinelearningmastery.com/gentle-introduction-gradient-boosting-algorithm-machine-learning/">https://machinelearningmastery.com/gentle-introduction-gradient-boosting-algorithm-machine-learning/</a>)<br>
+(<a href="https://www.analyticsvidhya.com/blog/2015/11/quick-introduction-boosting-algorithms-machine-learning/">https://www.analyticsvidhya.com/blog/2015/11/quick-introduction-boosting-algorithms-machine-learning/</a>)</p>
 <p><strong>Gradient Boosting Classifier</strong></p>
 <p>Gradient Boosting is an example of a ensemble method. An ensemble method is when you combine the predictions from multiple classifiers in some way and the aggregated prediction is often better than a single classifier. The Sk-Learn Gradient Boosting Classifier module uses <strong>Decision Trees</strong> as the base classifier.</p>
 <p>Training a Decision Tree classifier works by recursively splitting the test data into subsets using one of the features. Those subsets are again split into further subsets and so on until all the subsets contain either only one label that you are trying to classify or there are no more features to split on. There are various algorithms to decide what is the 'best' feature the split on. Predictions work by feeding new data into the structure created above and following the splits until the classified is determined.</p>
-<p>Gradient Boosting then works by taking the predictions of one classifier (in this case a decision trees )and then sequentially adding new classifiers that then fit the estimates that were classified incorrectly.</p>
+<p>Gradient Boosting then works by taking the predictions of one classifier (in this case a decision trees )and then sequentially adding new classifiers that then fit the estimates that were classified incorrectly. The idea is that by concentrating on the errors and adding more classifier, this gradually improves the overall accuracy of the model.</p>
+<p>Visually you can see how combining combining models allows us to capture more complicated relationships than a single model is capable of by itself.</p>
+<p><img src="https://www.analyticsvidhya.com/wp-content/uploads/2015/11/bigd.png"></p>
 
 </div>
 </div>
